@@ -1,7 +1,7 @@
 import {
-  FETCH_USERS_REQUEST,
-  FETCH_USERS_SUCCESS,
-  FETCH_USERS_ERROR,
+  FETCH_BREEDS_REQUEST,
+  FETCH_BREEDS_SUCCESS,
+  FETCH_BREEDS_ERROR,
 } from '../actions/action-types';
 
 const initialState = {
@@ -10,19 +10,19 @@ const initialState = {
   error: '',
 };
 
-const userReducer = (state = initialState, action) => {
-  if (action.type === FETCH_USERS_REQUEST) {
+const breedMenuReducer = (state = initialState, action) => {
+  if (action.type === FETCH_BREEDS_REQUEST) {
     return {
       ...state,
       loading: true,
     };
-  } if (action.type === FETCH_USERS_SUCCESS) {
+  } if (action.type === FETCH_BREEDS_SUCCESS) {
     return {
       loading: false,
       data: action.payload,
       error: '',
     };
-  } if (action.type === FETCH_USERS_ERROR) {
+  } if (action.type === FETCH_BREEDS_ERROR) {
     return {
       ...state,
       loading: false,
@@ -32,4 +32,4 @@ const userReducer = (state = initialState, action) => {
   return state;
 };
 
-export default userReducer;
+export default breedMenuReducer;

@@ -1,24 +1,24 @@
 import {
   ADD_ARTICLE,
-  FETCH_USERS_REQUEST,
-  FETCH_USERS_SUCCESS,
-  FETCH_USERS_ERROR,
+  FETCH_BREEDS_REQUEST,
+  FETCH_BREEDS_SUCCESS,
+  FETCH_BREEDS_ERROR,
 } from './action-types';
 
 export const addArticle = payload => ({ type: ADD_ARTICLE, payload });
-export const fetchUsersRequest = () => ({ type: FETCH_USERS_REQUEST });
-export const fetchUsersSuccess = users => ({ type: FETCH_USERS_SUCCESS, payload: users });
-export const fetchUsersError = error => ({ type: FETCH_USERS_ERROR, payload: error });
-export const fetchUsers = () => dispatch => {
-  dispatch(fetchUsersRequest());
+export const fetchBreedsRequest = () => ({ type: FETCH_BREEDS_REQUEST });
+export const fetchBreedsSuccess = users => ({ type: FETCH_BREEDS_SUCCESS, payload: users });
+export const fetchBreedsError = error => ({ type: FETCH_BREEDS_ERROR, payload: error });
+export const fetchBreeds = () => dispatch => {
+  dispatch(fetchBreedsRequest());
   (
     async () => {
       try {
-        const getUsers = await fetch('https://jsonplaceholder.typicode.com/users');
-        const usersJSON = await getUsers.json();
-        dispatch(fetchUsersSuccess(usersJSON));
+        const getBreeds = await fetch('https://api.thecatapi.com/v1/breeds');
+        const breedsJSON = await getBreeds.json();
+        dispatch(fetchBreedsSuccess(breedsJSON));
       } catch (e) {
-        dispatch(fetchUsersError(e));
+        dispatch(fetchBreedsError(e));
       }
     }
   )();

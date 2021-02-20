@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
 import articleReducer from './article';
-import userReducer from './user';
+import breedMenuReducer from './breedmenu';
 
 export default combineReducers({
   articlesState: articleReducer,
-  usersState: userReducer,
+  breedState: breedMenuReducer,
 });
