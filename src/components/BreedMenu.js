@@ -3,18 +3,22 @@ import { useSelector, useDispatch } from 'react-redux';
 import { fetchBreeds } from '../actions/index';
 
 const Users = () => {
-  const users = useSelector(state => state.breedState);
+  const breeds = useSelector(state => state.breedState);
   const dispatch = useDispatch();
+  const handleSelectChange = e => {
+    // eslint-disable-next-line no-alert
+    alert(e.target.value);
+  };
   return (
     <div>
       <button type="submit" onClick={() => dispatch(fetchBreeds())}>Users</button>
-      <ul>
-        {users.data.map(
+      <select onChange={handleSelectChange}>
+        {breeds.data.map(
           element => (
-            <li key={element.id}>{ element.name }</li>
+            <option value={element.id} key={element.id}>{ element.name }</option>
           ),
         )}
-      </ul>
+      </select>
     </div>
   );
 };
