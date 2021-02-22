@@ -13,22 +13,22 @@ const filterForm = () => {
   const handleChange = e => {
     setFilter(
       {
-        property: e.target.label,
-        value: e.target.value,
+        property: e.target.value,
+        value: e.target.checked,
       },
     );
   };
-  const handleSubmit = () => {
-    // eslint-disable-next-line no-alert
-    alert(filter);
+  const handleSubmit = e => {
+    e.preventDefault();
+    dispatch(updateFilter(filter));
   };
   return (
-    <form>
+    <form onSubmit={handleSubmit}>
       <label htmlFor="experimental">
         Experimental
-        <input onChange={handleChange} type="checkbox" id="experimental" value="Experimental" />
+        <input onChange={handleChange} type="checkbox" id="experimental" value="experimental" />
       </label>
-      <button type="submit" onClick={handleSubmit}>Submit</button>
+      <button type="submit">Submit</button>
     </form>
   );
 };
