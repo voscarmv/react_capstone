@@ -3,10 +3,10 @@ import {
   FETCH_BREEDS_REQUEST,
   FETCH_BREEDS_SUCCESS,
   FETCH_BREEDS_ERROR,
-  FILTER,
+  UPDATE_FILTER,
 } from './action-types';
 
-export const filter = payload => ({ type: FILTER, payload });
+export const updateFilter = payload => ({ type: UPDATE_FILTER, payload });
 export const addArticle = payload => ({ type: ADD_ARTICLE, payload });
 export const fetchBreedsRequest = () => ({ type: FETCH_BREEDS_REQUEST });
 export const fetchBreedsSuccess = users => ({ type: FETCH_BREEDS_SUCCESS, payload: users });

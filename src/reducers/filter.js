@@ -1,4 +1,4 @@
-import { FILTER } from '../actions/action-types';
+import { UPDATE_FILTER } from '../actions/action-types';
 
 const initialState = {
   experimental: 0,
@@ -10,7 +10,7 @@ const initialState = {
 };
 
 const filterReducer = (state = initialState, action) => {
-  if (action.type === FILTER) {
+  if (action.type === UPDATE_FILTER) {
     return { ...state, [action.payload.property]: action.payload.value };
   }
   return state;
