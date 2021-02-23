@@ -10,7 +10,7 @@ const initialState = {
 };
 
 const filterReducer = (state = initialState, action) => {
-  if (action.type === UPDATE_FILTER && action.payload.property !== undefined) {
+  if (action.type === UPDATE_FILTER) {
     return { ...state, [action.payload.property]: action.payload.value };
   }
   return state;

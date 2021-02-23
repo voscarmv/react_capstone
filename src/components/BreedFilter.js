@@ -15,7 +15,9 @@ const filterForm = () => {
   );
   useEffect(
     () => {
-      dispatch(updateFilter(filter));
+      if (filter.property !== undefined) {
+        dispatch(updateFilter(filter));
+      }
     },
   );
   const DOMelement = element => {

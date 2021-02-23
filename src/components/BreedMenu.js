@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { fetchBreeds } from '../actions/index';
+import { fetchBreeds, fetchCat } from '../actions/index';
 
 const Users = () => {
   const breeds = useSelector(state => state.breedState);
@@ -13,8 +13,7 @@ const Users = () => {
     [],
   );
   const handleSelectChange = e => {
-    // eslint-disable-next-line no-alert
-    alert(e.target.value);
+    dispatch(fetchCat(e.target.value));
   };
   const allNull = obj => {
     const values = Object.values(obj);
@@ -25,13 +24,14 @@ const Users = () => {
     }
     return true;
   };
+  const noFilters = allNull(filter);
   return (
     <div>
       <button type="submit" onClick={() => dispatch(fetchBreeds())}>Users</button>
       <select onChange={handleSelectChange}>
         {breeds.data.filter(
           breed => {
-            if (allNull(filter)) {
+            if (noFilters) {
               return true;
             }
             if (breed.experimental.toString() === filter.experimental) {
