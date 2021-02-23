@@ -17,7 +17,7 @@ const filterForm = () => {
     let property = '';
     if (e.target.type === 'checkbox') {
       property = e.target.value;
-      value = e.target.checked ? 1 : 0;
+      value = e.target.checked ? '1' : '0';
     } else {
       property = e.target.id;
       value = e.target.value;
@@ -37,7 +37,7 @@ const filterForm = () => {
       </label>
       <label htmlFor="intelligence">
         Intelligence
-        <input onChange={handleChange} type="number" id="intelligence" min="1" max="5" />
+        <input onChange={handleChange} type="number" id="intelligence" defaultValue="1" min="1" max="5" />
       </label>
     </form>
   );

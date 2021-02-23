@@ -4,6 +4,7 @@ import { fetchBreeds } from '../actions/index';
 
 const Users = () => {
   const breeds = useSelector(state => state.breedState);
+  const filter = useSelector(state => state.filterState);
   const dispatch = useDispatch();
   useEffect(
     () => {
@@ -19,9 +20,31 @@ const Users = () => {
     <div>
       <button type="submit" onClick={() => dispatch(fetchBreeds())}>Users</button>
       <select onChange={handleSelectChange}>
-        {breeds.data.map(
-          element => (
-            <option value={element.id} key={element.id}>{ element.name }</option>
+        {breeds.data.filter(
+          breed => {
+            if (breed.experimental.toString() === filter.experimental) {
+              return true;
+            }
+            // if (breed.natural === filter.natural) {
+            //   return true;
+            // }
+            // if (breed.rare === filter.rare) {
+            //   return true;
+            // }
+            // if (breed.child_friendly === filter.child_friendly) {
+            //   return true;
+            // }
+            if (breed.intelligence.toString() === filter.intelligence) {
+              return true;
+            }
+            // if (breed.affection_level === filter.affection_level) {
+            //   return true;
+            // }
+            return false;
+          },
+        ).map(
+          breed => (
+            <option value={breed.id} key={breed.id}>{ breed.name }</option>
           ),
         )}
       </select>

@@ -2,12 +2,6 @@ import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { addArticle } from '../actions/index';
 
-// function mapDispatchToProps(dispatch) {
-//   return {
-//     addArticle: article => dispatch(addArticle(article)),
-//   };
-// }
-
 const Form = () => {
   const dispatch = useDispatch();
   const [article, setArticle] = useState(
