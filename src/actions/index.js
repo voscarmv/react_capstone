@@ -38,7 +38,7 @@ export const fetchCat = breed => dispatch => {
     async () => {
       try {
         const getCat = await fetch(
-          `https://api.thecatapi.com/v1/images/search?breed_ids=${breed}`,
+          `https://api.thecatapi.com/v1/images/search?breed_id=${breed}`,
           {
             headers: {
               [xAPIKey]: '20874f76-4233-4e78-9f44-e30c018c07e8',
