@@ -1,16 +1,16 @@
 import { UPDATE_FILTER } from '../actions/action-types';
 
 const initialState = {
-  experimental: 0,
-  natural: 0,
-  rare: 0,
-  child_friendly: 0,
-  intelligence: 0,
-  affection_level: 0,
+  experimental: null,
+  natural: null,
+  rare: null,
+  child_friendly: null,
+  intelligence: null,
+  affection_level: null,
 };
 
 const filterReducer = (state = initialState, action) => {
-  if (action.type === UPDATE_FILTER) {
+  if (action.type === UPDATE_FILTER && action.payload.property !== undefined) {
     return { ...state, [action.payload.property]: action.payload.value };
   }
   return state;

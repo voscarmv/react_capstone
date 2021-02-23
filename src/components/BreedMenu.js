@@ -16,12 +16,24 @@ const Users = () => {
     // eslint-disable-next-line no-alert
     alert(e.target.value);
   };
+  const allNull = obj => {
+    const values = Object.values(obj);
+    for (let i = 0; i < values.length; i += 1) {
+      if (values[i] !== null) {
+        return false;
+      }
+    }
+    return true;
+  };
   return (
     <div>
       <button type="submit" onClick={() => dispatch(fetchBreeds())}>Users</button>
       <select onChange={handleSelectChange}>
         {breeds.data.filter(
           breed => {
+            if (allNull(filter)) {
+              return true;
+            }
             if (breed.experimental.toString() === filter.experimental) {
               return true;
             }
