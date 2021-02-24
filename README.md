@@ -1,6 +1,8 @@
 # Cat-alog
 
-> A search engine for cat breeds online.
+> A search engine for cat breeds online. 
+
+Check out this (https://youtu.be/wgLcnCgJZ-Y)[short video presentation.]
 
 ## Built With
 
