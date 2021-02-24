@@ -3,8 +3,6 @@ import { useSelector } from 'react-redux';
 
 const Cat = () => {
   const cat = useSelector(state => state.catState);
-  // eslint-disable-next-line no-console
-  console.log(cat.data[0]);
   if (cat.data[0]) {
     return (
       <div>
@@ -21,7 +19,5 @@ const Cat = () => {
     </div>
   );
 };
-
-// const Cat = () => (<div>Cat</div>);
 
 export default Cat;

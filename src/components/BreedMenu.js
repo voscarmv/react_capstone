@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchBreeds, fetchCat } from '../actions/index';
@@ -24,6 +25,18 @@ const Users = () => {
     }
     return true;
   };
+  const intersectFilters = (filter, breed) => {
+    const keys = Object.keys(filter);
+    const values = Object.values(filter);
+    console.log(filter);
+    for (let i = 0; i < values.length; i += 1) {
+      const breedVal = breed[keys[i]].toString();
+      if (values[i] !== null && values[i] !== breedVal) {
+        return false;
+      }
+    }
+    return true;
+  };
   const noFilters = allNull(filter);
   return (
     <div>
@@ -34,25 +47,7 @@ const Users = () => {
             if (noFilters) {
               return true;
             }
-            if (breed.experimental.toString() === filter.experimental) {
-              return true;
-            }
-            // if (breed.natural === filter.natural) {
-            //   return true;
-            // }
-            // if (breed.rare === filter.rare) {
-            //   return true;
-            // }
-            // if (breed.child_friendly === filter.child_friendly) {
-            //   return true;
-            // }
-            if (breed.intelligence.toString() === filter.intelligence) {
-              return true;
-            }
-            // if (breed.affection_level === filter.affection_level) {
-            //   return true;
-            // }
-            return false;
+            return intersectFilters(filter, breed);
           },
         ).map(
           breed => (
