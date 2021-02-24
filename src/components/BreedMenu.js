@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchBreeds, fetchCat } from '../actions/index';
 
-const Users = () => {
+const breedMenu = () => {
   const breeds = useSelector(state => state.breedState);
   const filter = useSelector(state => state.filterState);
   const dispatch = useDispatch();
@@ -38,7 +38,6 @@ const Users = () => {
   const noFilters = allNull(filter);
   return (
     <div>
-      <button type="submit" onClick={() => dispatch(fetchBreeds())}>Users</button>
       <select onChange={handleSelectChange}>
         {breeds.data.filter(
           breed => {
@@ -57,4 +56,4 @@ const Users = () => {
   );
 };
 
-export default Users;
+export default breedMenu;
