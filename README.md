@@ -2,7 +2,7 @@
 
 > A search engine for cat breeds online. 
 
-Check out this [https://youtu.be/wgLcnCgJZ-Y](short video presentation.)
+Check out this [short video presentation.](https://youtu.be/wgLcnCgJZ-Y)
 
 ## Built With
 
