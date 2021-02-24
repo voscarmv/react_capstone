@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchBreeds, fetchCat } from '../actions/index';
@@ -28,7 +27,6 @@ const Users = () => {
   const intersectFilters = (filter, breed) => {
     const keys = Object.keys(filter);
     const values = Object.values(filter);
-    console.log(filter);
     for (let i = 0; i < values.length; i += 1) {
       const breedVal = breed[keys[i]].toString();
       if (values[i] !== null && values[i] !== breedVal) {
