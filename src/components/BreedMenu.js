@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Form, FormControl } from 'react-bootstrap';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchBreeds, fetchCat } from '../actions/index';
 
@@ -37,8 +38,8 @@ const breedMenu = () => {
   };
   const noFilters = allNull(filter);
   return (
-    <div>
-      <select onChange={handleSelectChange}>
+    <Form inline>
+      <FormControl as="select" onChange={handleSelectChange}>
         {breeds.data.filter(
           breed => {
             if (noFilters) {
@@ -51,8 +52,8 @@ const breedMenu = () => {
             <option value={breed.id} key={breed.id}>{ breed.name }</option>
           ),
         )}
-      </select>
-    </div>
+      </FormControl>
+    </Form>
   );
 };
 

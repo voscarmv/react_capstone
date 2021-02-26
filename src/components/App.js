@@ -1,12 +1,10 @@
 import React from 'react';
-import BreedMenu from './BreedMenu';
-import BreedFilter from './BreedFilter';
+import Nav from './Nav';
 import Cat from './Cat';
 
 const App = () => (
   <div>
-    <BreedFilter />
-    <BreedMenu />
+    <Nav />
     <Cat />
   </div>
 );
