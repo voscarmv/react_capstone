@@ -13,17 +13,23 @@ const Nav = () => {
         <Navbar.Brand>
           CATalog
         </Navbar.Brand>
-        <Button
-          onClick={() => { setOpen(!open); }}
-          aria-controls="collapse-filter-form"
-          aria-expanded={open}
-        >
-          Filter
-        </Button>
-        <div className="p-4">
-          Show breed:
+        <div className="container-fluid">
+          <div className="ml-auto">
+            Show breed:
+          </div>
+          <div className="p-3">
+            <BreedMenu />
+          </div>
+          <div className="">
+            <Button
+              onClick={() => { setOpen(!open); }}
+              aria-controls="collapse-filter-form"
+              aria-expanded={open}
+            >
+              Filter
+            </Button>
+          </div>
         </div>
-        <BreedMenu />
       </Navbar>
       <Collapse in={open}>
         <div id="collapse-filter-form">
