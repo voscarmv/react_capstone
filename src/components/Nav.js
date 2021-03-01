@@ -9,12 +9,12 @@ const Nav = () => {
   );
   return (
     <>
-      <Navbar>
+      <Navbar bg="dark" variant="dark">
         <Navbar.Brand>
           CATalog
         </Navbar.Brand>
         <div className="container-fluid">
-          <div className="ml-auto">
+          <div className="ml-auto text-light">
             Show breed:
           </div>
           <div className="p-3">

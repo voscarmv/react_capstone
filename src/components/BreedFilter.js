@@ -65,25 +65,27 @@ const filterForm = () => {
     );
   };
   return (
-    <form>
-      <label htmlFor="experimental">
-        Filter by experimental
-        <input onChange={handleEnabled} type="checkbox" id="experimental_disabled" value="experimental_disabled" />
-      </label>
-      <label htmlFor="experimental">
-        Filter by intelligence
-        <input onChange={handleEnabled} type="checkbox" id="intelligence_disabled" value="intelligence_disabled" />
-      </label>
-      <hr />
-      <label htmlFor="experimental">
-        Experimental
-        <input ref={refs.experimental} disabled={enabled.experimental_disabled} onChange={handleChange} type="checkbox" id="experimental" value="experimental" />
-      </label>
-      <label htmlFor="intelligence">
-        Intelligence
-        <input ref={refs.intelligence} disabled={enabled.intelligence_disabled} onChange={handleChange} type="number" id="intelligence" defaultValue="1" min="1" max="5" />
-      </label>
-    </form>
+    <div className="bg-dark text-light p-3">
+      <form>
+        <label htmlFor="experimental">
+          Filter by experimental
+          <input onChange={handleEnabled} type="checkbox" id="experimental_disabled" value="experimental_disabled" />
+        </label>
+        <label htmlFor="experimental">
+          Filter by intelligence
+          <input onChange={handleEnabled} type="checkbox" id="intelligence_disabled" value="intelligence_disabled" />
+        </label>
+        <hr />
+        <label htmlFor="experimental">
+          Experimental
+          <input ref={refs.experimental} disabled={enabled.experimental_disabled} onChange={handleChange} type="checkbox" id="experimental" value="experimental" />
+        </label>
+        <label htmlFor="intelligence">
+          Intelligence
+          <input ref={refs.intelligence} disabled={enabled.intelligence_disabled} onChange={handleChange} type="number" id="intelligence" defaultValue="1" min="1" max="5" />
+        </label>
+      </form>
+    </div>
   );
 };
 
