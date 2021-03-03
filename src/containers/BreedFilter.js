@@ -66,23 +66,29 @@ const filterForm = () => {
   };
   return (
     <div className="bg-dark text-light p-3">
-      <form>
-        <label htmlFor="experimental">
-          Filter by experimental
-          <input onChange={handleEnabled} type="checkbox" id="experimental_disabled" value="experimental_disabled" />
+      <form className="d-flex flex-column">
+        <div className="ml-auto mr-3 font-weight-bold">
+          Filter by
+        </div>
+        <label className="ml-auto" htmlFor="experimental">
+          Experimental
+          <input onChange={handleEnabled} className="ml-2" type="checkbox" id="experimental_disabled" value="experimental_disabled" />
         </label>
-        <label htmlFor="experimental">
-          Filter by intelligence
-          <input onChange={handleEnabled} type="checkbox" id="intelligence_disabled" value="intelligence_disabled" />
+        <label className="ml-auto" htmlFor="experimental">
+          Intelligence
+          <input onChange={handleEnabled} className="ml-2" type="checkbox" id="intelligence_disabled" value="intelligence_disabled" />
         </label>
         <hr />
-        <label htmlFor="experimental">
+        <div className="ml-auto mr-3 font-weight-bold">
+          Filter preferences
+        </div>
+        <label className="ml-auto" htmlFor="experimental">
           Experimental
-          <input ref={refs.experimental} disabled={enabled.experimental_disabled} onChange={handleChange} type="checkbox" id="experimental" value="experimental" />
+          <input ref={refs.experimental} className="ml-2" disabled={enabled.experimental_disabled} onChange={handleChange} type="checkbox" id="experimental" value="experimental" />
         </label>
-        <label htmlFor="intelligence">
+        <label className="ml-auto" htmlFor="intelligence">
           Intelligence
-          <input ref={refs.intelligence} disabled={enabled.intelligence_disabled} onChange={handleChange} type="number" id="intelligence" defaultValue="1" min="1" max="5" />
+          <input ref={refs.intelligence} className="ml-2" disabled={enabled.intelligence_disabled} onChange={handleChange} type="number" id="intelligence" defaultValue="1" min="1" max="5" />
         </label>
       </form>
     </div>

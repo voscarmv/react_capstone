@@ -11,7 +11,7 @@ const Nav = () => {
     <>
       <Navbar bg="dark" variant="dark">
         <Navbar.Brand>
-          CATalog
+          😺 The Cat-alog
         </Navbar.Brand>
         <div className="container-fluid">
           <div className="ml-auto text-light">

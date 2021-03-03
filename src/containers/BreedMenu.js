@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
-import { Form, FormControl } from 'react-bootstrap';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchBreeds, fetchCat } from '../actions/index';
+import BreedSelector from '../components/BreedSelector';
 
 const breedMenu = () => {
   const breeds = useSelector(state => state.breedState);
@@ -37,23 +37,16 @@ const breedMenu = () => {
     return true;
   };
   const noFilters = allNull(filter);
+  const breedsData = breeds.data.filter(
+    breed => {
+      if (noFilters) {
+        return true;
+      }
+      return intersectFilters(filter, breed);
+    },
+  );
   return (
-    <Form inline>
-      <FormControl as="select" onChange={handleSelectChange}>
-        {breeds.data.filter(
-          breed => {
-            if (noFilters) {
-              return true;
-            }
-            return intersectFilters(filter, breed);
-          },
-        ).map(
-          breed => (
-            <option value={breed.id} key={breed.id}>{ breed.name }</option>
-          ),
-        )}
-      </FormControl>
-    </Form>
+    <BreedSelector breedsData={breedsData} handleSelectChange={handleSelectChange} />
   );
 };
 
