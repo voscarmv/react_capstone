@@ -33,8 +33,8 @@ const filterForm = () => {
   );
   const [enabled, setEnabled] = useState(
     {
-      experimental_disabled: true,
-      intelligence_disabled: true,
+      experimental: true,
+      intelligence: true,
     },
   );
   useEffect(
@@ -60,6 +60,8 @@ const filterForm = () => {
     };
   };
   const handleChange = e => {
+    // eslint-disable-next-line no-console
+    console.log('Handling da change');
     const { property, value } = DOMelement(e.target);
     setFilter(
       {
@@ -79,7 +81,7 @@ const filterForm = () => {
         [e.target.value]: !e.target.checked,
       },
     );
-    const element = e.target.value.split('_')[0];
+    const element = e.target.value;
     const { property, value } = DOMelement(refs[element].current);
     setFilter(
       {
@@ -108,14 +110,14 @@ const filterForm = () => {
         <div className="ml-auto mr-3 font-weight-bold">
           Filter preferences
         </div>
-        <CheckboxFilter ename="experimental" ref={refs.experimental} disabled={enabled.experimental_disabled} onChange={handleChange} />
+        <CheckboxFilter ename="experimental" ref={refs.experimental} disabled={enabled.experimental} handleChange={handleChange} />
         {/* <label className="ml-auto" htmlFor="experimental">
           Experimental
           <input ref={refs.experimental} className="ml-2"
           disabled={enabled.experimental_disabled} onChange={handleChange} type="checkbox"
           id="experimental" value="experimental" />
         </label> */}
-        <NumericFilter name="intelligence" ref={refs.intelligence} disabled={enabled.intelligence_disabled} onChange={handleChange} />
+        <NumericFilter name="intelligence" ref={refs.intelligence} disabled={enabled.intelligence} onChange={handleChange} />
         {/* <label className="ml-auto" htmlFor="intelligence">
           Intelligence
           <input ref={refs.intelligence} className="ml-2"

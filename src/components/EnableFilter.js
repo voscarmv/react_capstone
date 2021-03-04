@@ -4,7 +4,7 @@ import propTypes from 'prop-types';
 const EnableFilter = ({ name, handleEnabled }) => (
   <label className="ml-auto" htmlFor={name}>
     {name}
-    <input onChange={handleEnabled} className="ml-2" type="checkbox" id={`${name}_disabled`} value={`${name}_disabled`} />
+    <input onChange={handleEnabled} className="ml-2" type="checkbox" id={name} value={name} />
   </label>
 );
 
