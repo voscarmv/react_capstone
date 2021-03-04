@@ -10,8 +10,8 @@ const CheckboxFilter = forwardRef(
     } = props;
     return (
       <label className="ml-auto" htmlFor={ename}>
-        {ename}
-        <input ref={ref} className="ml-2" disabled={!disabled} onChange={handleChange} type="checkbox" id={ename} value={ename} />
+        {ename.replace(/^\w/, c => c.toUpperCase()).split('_').join(' ')}
+        <input ref={ref} className="mr-3 ml-1" disabled={!disabled} onChange={handleChange} type="checkbox" id={ename} value={ename} />
       </label>
     );
   },

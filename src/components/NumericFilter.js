@@ -1,23 +1,28 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import propTypes from 'prop-types';
 
-const NumericFilter = ({
-  name,
-  ref,
-  disabled,
-  handleChange,
-}) => (
-  <label className="ml-auto" htmlFor={name}>
-    {name}
-    <input ref={ref} className="ml-2" disabled={!disabled} onChange={handleChange} type="number" id={name} defaultValue="1" min="1" max="5" />
-  </label>
+const NumericFilter = forwardRef(
+  (props, ref) => {
+    const {
+      name,
+      disabled,
+      handleChange,
+    } = props;
+    return (
+      <label className="ml-auto" htmlFor={name}>
+        {name.replace(/^\w/, c => c.toUpperCase()).split('_').join(' ')}
+        <input ref={ref} className="mr-3 ml-1" disabled={!disabled} onChange={handleChange} type="number" id={name} defaultValue="1" min="1" max="5" />
+      </label>
+    );
+  },
 );
 
 NumericFilter.propTypes = {
   name: propTypes.string.isRequired,
-  ref: propTypes.elementType.isRequired,
   disabled: propTypes.bool.isRequired,
   handleChange: propTypes.func.isRequired,
 };
+
+NumericFilter.displayName = 'NumericFilterComponent';
 
 export default NumericFilter;
