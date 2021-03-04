@@ -1,23 +1,28 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import propTypes from 'prop-types';
 
-const CheckboxFilter = ({
-  name,
-  ref,
-  disabled,
-  handleChange,
-}) => (
-  <label className="ml-auto" htmlFor={name}>
-    {name}
-    <input ref={ref} className="ml-2" disabled={disabled} onChange={handleChange} type="checkbox" id={name} value={name} />
-  </label>
+const CheckboxFilter = forwardRef(
+  (props, ref) => {
+    const {
+      ename,
+      disabled,
+      handleChange,
+    } = props;
+    return (
+      <label className="ml-auto" htmlFor={ename}>
+        {ename}
+        <input ref={ref} className="ml-2" disabled={disabled} onChange={handleChange} type="checkbox" id={ename} value={ename} />
+      </label>
+    );
+  },
 );
 
 CheckboxFilter.propTypes = {
-  name: propTypes.string.isRequired,
-  ref: propTypes.elementType.isRequired,
+  ename: propTypes.string.isRequired,
   disabled: propTypes.bool.isRequired,
   handleChange: propTypes.func.isRequired,
 };
+
+CheckboxFilter.displayName = 'CheckboxFilterComponent';
 
 export default CheckboxFilter;

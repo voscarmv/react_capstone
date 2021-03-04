@@ -28,7 +28,13 @@ const breedMenu = () => {
   const intersectFilters = (filter, breed) => {
     const keys = Object.keys(filter);
     const values = Object.values(filter);
+    // eslint-disable-next-line no-console
+    console.log(breed);
+    // eslint-disable-next-line no-console
+    console.log(keys);
     for (let i = 0; i < values.length; i += 1) {
+      // eslint-disable-next-line no-console
+      console.log(keys[i]);
       const breedVal = breed[keys[i]].toString();
       if (values[i] !== null && values[i] !== breedVal) {
         return false;
