@@ -122,35 +122,71 @@ const filterForm = () => {
       },
     );
   };
+  const enablerCheckboxes = [];
+  Object.keys(enabled).forEach(
+    k => {
+      // eslint-disable-next-line no-console
+      console.log(k);
+      enablerCheckboxes.push(<EnableFilter name={k} handleEnabled={handleEnabled} />);
+    },
+  );
+  const filterComponents = [];
+  Object.keys(isCheckbox).forEach(
+    k => {
+      if (isCheckbox[k]) {
+        filterComponents.push(
+          <CheckboxFilter
+            ename={k}
+            ref={refs[k]}
+            disabled={enabled[k]}
+            handleChange={handleChange}
+          />,
+        );
+      } else {
+        filterComponents.push(
+          <NumericFilter
+            ename={k}
+            ref={refs[k]}
+            disabled={enabled[k]}
+            handleChange={handleChange}
+          />,
+        );
+      }
+    },
+  );
   return (
     <div className="bg-dark text-light p-3">
       <form className="d-flex flex-column">
         <div className="ml-auto mr-3 font-weight-bold">
           Filter by
         </div>
-
-        <EnableFilter name="experimental" handleEnabled={handleEnabled} />
+        {enablerCheckboxes}
+        {/* <EnableFilter name="experimental" handleEnabled={handleEnabled} /> */}
         {/* <label className="ml-auto" htmlFor="experimental">
           Experimental
           <input onChange={handleEnabled} className="ml-2" type="checkbox"
           id="experimental_disabled" value="experimental_disabled" />
         </label> */}
-        <label className="ml-auto" htmlFor="experimental">
+        {/* <label className="ml-auto" htmlFor="experimental">
           Intelligence
-          <input onChange={handleEnabled} className="ml-2" type="checkbox" id="intelligence_disabled" value="intelligence_disabled" />
-        </label>
+          <input onChange={handleEnabled} className="ml-2" type="checkbox"
+          id="intelligence_disabled" value="intelligence_disabled" />
+        </label> */}
         <hr />
         <div className="ml-auto mr-3 font-weight-bold">
           Filter preferences
         </div>
-        <CheckboxFilter ename="experimental" ref={refs.experimental} disabled={enabled.experimental} handleChange={handleChange} />
+        {filterComponents}
+        {/* <CheckboxFilter ename="experimental" ref={refs.experimental}
+        disabled={enabled.experimental} handleChange={handleChange} /> */}
         {/* <label className="ml-auto" htmlFor="experimental">
           Experimental
           <input ref={refs.experimental} className="ml-2"
           disabled={enabled.experimental_disabled} onChange={handleChange} type="checkbox"
           id="experimental" value="experimental" />
         </label> */}
-        <NumericFilter name="intelligence" ref={refs.intelligence} disabled={enabled.intelligence} onChange={handleChange} />
+        {/* <NumericFilter name="intelligence" ref={refs.intelligence}
+        disabled={enabled.intelligence} onChange={handleChange} /> */}
         {/* <label className="ml-auto" htmlFor="intelligence">
           Intelligence
           <input ref={refs.intelligence} className="ml-2"
