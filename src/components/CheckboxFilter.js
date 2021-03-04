@@ -11,7 +11,7 @@ const CheckboxFilter = forwardRef(
     return (
       <label className="ml-auto" htmlFor={ename}>
         {ename}
-        <input ref={ref} className="ml-2" disabled={disabled} onChange={handleChange} type="checkbox" id={ename} value={ename} />
+        <input ref={ref} className="ml-2" disabled={!disabled} onChange={handleChange} type="checkbox" id={ename} value={ename} />
       </label>
     );
   },
