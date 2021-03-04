@@ -7,34 +7,51 @@ import NumericFilter from '../components/NumericFilter';
 
 const filterForm = () => {
   const dispatch = useDispatch();
-  // const isCheckbox = {
-  //   experimental: true,
-  //   hairless: true,
-  //   natural: true,
-  //   rare: true,
-  //   suppress_tail: true,
-  //   short_legs: true,
-  //   hypoallergenic: true,
-  //   adaptability: false,
-  //   affection_level: false,
-  //   child_friendly: false,
-  //   dog_friendly: false,
-  //   energy_level: false,
-  //   grooming: false,
-  //   health_issues: false,
-  //   intelligence: false,
-  //   shedding_level: false,
-  //   social_needs: false,
-  //   stranger_friendly: false,
-  //   vocalisation: false,
-  // };
+  const isCheckbox = {
+    experimental: true,
+    hairless: true,
+    natural: true,
+    rare: true,
+    suppress_tail: true,
+    short_legs: true,
+    hypoallergenic: true,
+    adaptability: false,
+    affection_level: false,
+    child_friendly: false,
+    dog_friendly: false,
+    energy_level: false,
+    grooming: false,
+    health_issues: false,
+    intelligence: false,
+    shedding_level: false,
+    social_needs: false,
+    stranger_friendly: false,
+    vocalisation: false,
+  };
   const [filter, setFilter] = useState(
     {},
   );
   const [enabled, setEnabled] = useState(
     {
-      experimental: true,
-      intelligence: true,
+      experimental: false,
+      hairless: false,
+      natural: false,
+      rare: false,
+      suppress_tail: false,
+      short_legs: false,
+      hypoallergenic: false,
+      adaptability: false,
+      affection_level: false,
+      child_friendly: false,
+      dog_friendly: false,
+      energy_level: false,
+      grooming: false,
+      health_issues: false,
+      intelligence: false,
+      shedding_level: false,
+      social_needs: false,
+      stranger_friendly: false,
+      vocalisation: false,
     },
   );
   useEffect(
@@ -60,8 +77,6 @@ const filterForm = () => {
     };
   };
   const handleChange = e => {
-    // eslint-disable-next-line no-console
-    console.log('Handling da change');
     const { property, value } = DOMelement(e.target);
     setFilter(
       {
@@ -72,13 +87,30 @@ const filterForm = () => {
   };
   const refs = {
     experimental: useRef(null),
+    hairless: useRef(null),
+    natural: useRef(null),
+    rare: useRef(null),
+    suppress_tail: useRef(null),
+    short_legs: useRef(null),
+    hypoallergenic: useRef(null),
+    adaptability: useRef(null),
+    affection_level: useRef(null),
+    child_friendly: useRef(null),
+    dog_friendly: useRef(null),
+    energy_level: useRef(null),
+    grooming: useRef(null),
+    health_issues: useRef(null),
     intelligence: useRef(null),
+    shedding_level: useRef(null),
+    social_needs: useRef(null),
+    stranger_friendly: useRef(null),
+    vocalisation: useRef(null),
   };
   const handleEnabled = e => {
     setEnabled(
       {
         ...enabled,
-        [e.target.value]: !e.target.checked,
+        [e.target.value]: e.target.checked,
       },
     );
     const element = e.target.value;
@@ -96,6 +128,7 @@ const filterForm = () => {
         <div className="ml-auto mr-3 font-weight-bold">
           Filter by
         </div>
+
         <EnableFilter name="experimental" handleEnabled={handleEnabled} />
         {/* <label className="ml-auto" htmlFor="experimental">
           Experimental
