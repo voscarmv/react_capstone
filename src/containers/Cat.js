@@ -25,7 +25,8 @@ const Cat = () => {
   return (
     <div className="m-3">
       <h5>
-        Welcome to The Cat-alog! 🐈
+        Welcome to The Cat-alog!
+        <span aria-label="cat" role="img">🐈</span>
       </h5>
       <p>
         You can browse through our database of cat
