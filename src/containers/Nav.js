@@ -1,5 +1,6 @@
 import { Navbar, Button, Collapse } from 'react-bootstrap';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import BreedFilter from './BreedFilter';
 import BreedMenu from './BreedMenu';
 
@@ -12,7 +13,7 @@ const Nav = () => {
       <Navbar bg="dark" variant="dark">
         <Navbar.Brand>
           <span aria-label="cat" role="img">😺</span>
-          The Cat-alog
+          <Link to="/">The Cat-alog</Link>
         </Navbar.Brand>
         <div className="container-fluid">
           <div className="ml-auto text-light">

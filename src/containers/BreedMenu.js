@@ -1,9 +1,11 @@
 import React, { useEffect } from 'react';
+import { useHistory } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchBreeds, fetchCat } from '../actions/index';
 import BreedSelector from '../components/BreedSelector';
 
 const breedMenu = () => {
+  const history = useHistory();
   const breeds = useSelector(state => state.breedState);
   const filter = useSelector(state => state.filterState);
   const dispatch = useDispatch();
@@ -14,6 +16,9 @@ const breedMenu = () => {
     [],
   );
   const handleSelectChange = e => {
+    // eslint-disable-next-line no-console
+    console.log('nothing');
+    history.push('/cat');
     dispatch(fetchCat(e.target.value));
   };
   const allNull = obj => {
