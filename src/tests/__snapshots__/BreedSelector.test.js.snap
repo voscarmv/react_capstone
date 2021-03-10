@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Breed Selector renders correctly 1`] = `
+<form
+  className="form-inline"
+>
+  <select
+    className="form-control"
+    onChange={[Function]}
+  >
+    <option
+      value="abys"
+    >
+      Abyssinian
+    </option>
+    <option
+      value="aege"
+    >
+      Aegean
+    </option>
+    <option
+      value="abob"
+    >
+      American Bobtail
+    </option>
+  </select>
+</form>
+`;
