@@ -1,5 +1,5 @@
 import { Navbar, Button, Collapse } from 'react-bootstrap';
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import BreedFilter from './BreedFilter';
 import BreedMenu from './BreedMenu';
