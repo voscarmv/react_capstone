@@ -122,48 +122,54 @@ const filterForm = () => {
       },
     );
   };
-  const enablerCheckboxes = [];
-  Object.keys(enabled).forEach(
-    k => {
-      enablerCheckboxes.push(<EnableFilter name={k} handleEnabled={handleEnabled} />);
-    },
-  );
-  const filterComponents = [];
-  Object.keys(isCheckbox).forEach(
-    k => {
-      if (isCheckbox[k]) {
-        filterComponents.push(
-          <CheckboxFilter
-            ename={k}
-            ref={refs[k]}
-            disabled={enabled[k]}
-            handleChange={handleChange}
-          />,
-        );
-      } else {
-        filterComponents.push(
-          <NumericFilter
-            name={k}
-            ref={refs[k]}
-            disabled={enabled[k]}
-            handleChange={handleChange}
-          />,
-        );
-      }
-    },
-  );
   return (
-    <div className="bg-dark text-light p-3">
-      <form>
-        <div className="ml-auto mr-3 font-weight-bold">
+    <div key="contain" className="bg-dark text-light p-3">
+      <form key="filter-form">
+        <div key="filter-by" className="ml-auto mr-3 font-weight-bold">
           Filter by
         </div>
-        {enablerCheckboxes}
-        <hr />
-        <div className="ml-auto mr-3 font-weight-bold">
+        {/* {enablerCheckboxes} */}
+        {
+          Object.keys(enabled).map(
+            k => (
+              <EnableFilter key={k} name={k} handleEnabled={handleEnabled} />
+            ),
+          )
+        }
+        <hr key="horiz" />
+        <div key="filter-prefs" className="ml-auto mr-3 font-weight-bold">
           Filter preferences
         </div>
-        {filterComponents}
+        {
+          Object.keys(isCheckbox).filter(
+            k => (isCheckbox[k]),
+          ).map(
+            k => (
+              <CheckboxFilter
+                key={k}
+                ename={k}
+                ref={refs[k]}
+                disabled={enabled[k]}
+                handleChange={handleChange}
+              />
+            ),
+          )
+        }
+        {
+          Object.keys(isCheckbox).filter(
+            k => (!isCheckbox[k]),
+          ).map(
+            k => (
+              <NumericFilter
+                key={k}
+                name={k}
+                ref={refs[k]}
+                disabled={enabled[k]}
+                handleChange={handleChange}
+              />
+            ),
+          )
+        }
       </form>
     </div>
   );

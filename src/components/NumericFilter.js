@@ -10,7 +10,7 @@ const NumericFilter = forwardRef(
     } = props;
     return (
       <label className="ml-auto" htmlFor={name}>
-        {name.replace(/^\w/, c => c.toUpperCase()).split('_').join(' ')}
+        <span>{name.replace(/^\w/, c => c.toUpperCase()).split('_').join(' ')}</span>
         <input ref={ref} className="mr-3 ml-1" disabled={!disabled} onChange={handleChange} type="number" id={name} defaultValue="1" min="1" max="5" />
       </label>
     );
