@@ -1,3 +1,4 @@
+import fetch from 'node-fetch';
 import {
   FETCH_BREEDS_REQUEST,
   FETCH_BREEDS_SUCCESS,

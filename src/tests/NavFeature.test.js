@@ -6,7 +6,7 @@ import App from '../containers/App';
 import 'regenerator-runtime/runtime';
 
 describe('App', () => {
-  test('renders App component', () => {
+  test('renders App component', async () => {
     render(<Provider store={store}><App /></Provider>);
     // screen.debug();
     // fails
