@@ -128,7 +128,6 @@ const filterForm = () => {
         <div key="filter-by" className="ml-auto mr-3 font-weight-bold">
           Filter by
         </div>
-        {/* {enablerCheckboxes} */}
         {
           Object.keys(enabled).map(
             k => (
