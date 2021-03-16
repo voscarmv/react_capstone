@@ -16,8 +16,6 @@ const breedMenu = () => {
     [],
   );
   const handleSelectChange = e => {
-    // eslint-disable-next-line no-console
-    console.log('nothing');
     history.push('/cat');
     dispatch(fetchCat(e.target.value));
   };
