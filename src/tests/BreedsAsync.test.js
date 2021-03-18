@@ -1,7 +1,8 @@
 import configureMockStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
 import fetchMock from 'fetch-mock';
-import expect from 'expect';
+// eslint-disable-next-line no-unused-vars
+import RegeneratorRuntime from 'regenerator-runtime';
 import * as action from '../actions/index';
 import * as types from '../actions/action-types';
 
@@ -3126,7 +3127,7 @@ const breedsResponse = [
 ];
 
 describe('async actions',
-  async () => {
+  () => {
     afterEach(
       () => {
         fetchMock.reset();
@@ -3144,7 +3145,7 @@ describe('async actions',
           { type: types.FETCH_BREEDS_SUCCESS, payload: breedsResponse },
         ];
         const store = mockStore({ breedsState: [] });
-        return store.dispatch(action.fetchBreeds()).then(() => {
+        store.dispatch(action.fetchBreeds()).then(() => {
           // return of async actions
           expect(store.getActions()).toEqual(expectActions);
         });

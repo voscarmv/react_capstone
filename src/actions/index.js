@@ -16,23 +16,19 @@ export const fetchBreedsError = error => ({ type: FETCH_BREEDS_ERROR, payload: e
 export const fetchCatRequest = () => ({ type: FETCH_CAT_REQUEST });
 export const fetchCatSuccess = users => ({ type: FETCH_CAT_SUCCESS, payload: users });
 export const fetchCatError = error => ({ type: FETCH_CAT_ERROR, payload: error });
-export const fetchBreeds = () => dispatch => {
+export const fetchBreeds = () => async dispatch => {
   dispatch(fetchBreedsRequest());
-  (
-    async () => {
-      try {
-        const getBreeds = await fetch('https://api.thecatapi.com/v1/breeds');
-        // eslint-disable-next-line no-console
-        console.log(getBreeds);
-        const breedsJSON = await getBreeds.json();
-        // eslint-disable-next-line no-console
-        console.log(breedsJSON);
-        dispatch(fetchBreedsSuccess(breedsJSON));
-      } catch (e) {
-        dispatch(fetchBreedsError(e));
-      }
-    }
-  )();
+  try {
+    const getBreeds = await fetch('https://api.thecatapi.com/v1/breeds');
+    // eslint-disable-next-line no-console
+    console.log(getBreeds);
+    const breedsJSON = await getBreeds.json();
+    // eslint-disable-next-line no-console
+    console.log(breedsJSON);
+    dispatch(fetchBreedsSuccess(breedsJSON));
+  } catch (e) {
+    dispatch(fetchBreedsError(e));
+  }
 };
 export const fetchCat = breed => dispatch => {
   dispatch(fetchCatRequest());
