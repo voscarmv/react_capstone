@@ -22,7 +22,11 @@ export const fetchBreeds = () => dispatch => {
     async () => {
       try {
         const getBreeds = await fetch('https://api.thecatapi.com/v1/breeds');
+        // eslint-disable-next-line no-console
+        console.log(getBreeds);
         const breedsJSON = await getBreeds.json();
+        // eslint-disable-next-line no-console
+        console.log(breedsJSON);
         dispatch(fetchBreedsSuccess(breedsJSON));
       } catch (e) {
         dispatch(fetchBreedsError(e));

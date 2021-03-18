@@ -5,6 +5,7 @@ import {
 } from '../actions/action-types';
 
 const initialState = {
+
   loading: false,
   data: [],
   error: '',
