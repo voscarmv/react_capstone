@@ -1,5 +1,5 @@
 import React from 'react';
-import renderer, { act } from 'react-test-renderer';
+import TestRenderer, { act } from 'react-test-renderer';
 // import { render, screen } from '@testing-library/react';
 import { Provider } from 'react-redux';
 import store from '../store/index';
@@ -10,7 +10,7 @@ describe('App', () => {
   test('renders App component', async () => {
     let component;
     await act(async () => {
-      component = await renderer.create(<Provider store={store}><App /></Provider>);
+      component = TestRenderer.create(<Provider store={store}><App /></Provider>);
     });
     // screen.debug();
     // fails
