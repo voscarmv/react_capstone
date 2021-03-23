@@ -19,11 +19,11 @@ describe('App', () => {
         expect(screen.getByText('Siberian'));
       },
     );
-    fireEvent.click(getByTestId('aege'));
-    setTimeout(function(){
+    // fireEvent.click(getByTestId('aege'));
+    // setTimeout(function(){
 
 
-    }, 5000); 
+    // }, 5000); 
     // const tree = fullApp.toJSON();
     // await waitFor(
     //   () => {
