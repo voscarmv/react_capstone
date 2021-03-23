@@ -10,7 +10,8 @@ import 'regenerator-runtime/runtime';
 describe('App', () => {
   test('renders App component', async () => {
     // let component;
-    const { getByTestId } = render(<Provider store={store}><App /></Provider>);
+    const fullApp = render(<Provider store={store}><App /></Provider>);
+    const { getByTestId, asFragment } = fullApp;
     // screen.debug();
     // fails
     await waitFor(
@@ -18,12 +19,14 @@ describe('App', () => {
         expect(screen.getByText('Siberian'));
       },
     );
-    fireEvent.click(getByTestId('aege'));
-    await waitFor(
-      () => {
-        expect(screen.getByText('Wikipedia'));
-      },
-    );
+    // fireEvent.click(getByTestId('aege'));
+    // const tree = fullApp.toJSON();
+    // await waitFor(
+    //   () => {
+    //     expect(screen.getByText('island'));
+    //   },
+    // );
+    expect(asFragment()).toMatchSnapshot();
     // expect(component.getByText(/Searches for JavaScript/)).toBeNull();
     // expect(component.toJSON()).toMatchSnapshot();
   });

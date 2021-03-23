@@ -6,406 +6,472 @@ exports[`Breed Selector renders correctly 1`] = `
 >
   <select
     className="form-control"
-    onChange={[Function]}
   >
     <option
       data-testid="abys"
+      onClick={[Function]}
       value="abys"
     >
       Abyssinian
     </option>
     <option
       data-testid="aege"
+      onClick={[Function]}
       value="aege"
     >
       Aegean
     </option>
     <option
       data-testid="abob"
+      onClick={[Function]}
       value="abob"
     >
       American Bobtail
     </option>
     <option
       data-testid="acur"
+      onClick={[Function]}
       value="acur"
     >
       American Curl
     </option>
     <option
       data-testid="asho"
+      onClick={[Function]}
       value="asho"
     >
       American Shorthair
     </option>
     <option
       data-testid="awir"
+      onClick={[Function]}
       value="awir"
     >
       American Wirehair
     </option>
     <option
       data-testid="amau"
+      onClick={[Function]}
       value="amau"
     >
       Arabian Mau
     </option>
     <option
       data-testid="amis"
+      onClick={[Function]}
       value="amis"
     >
       Australian Mist
     </option>
     <option
       data-testid="bali"
+      onClick={[Function]}
       value="bali"
     >
       Balinese
     </option>
     <option
       data-testid="bamb"
+      onClick={[Function]}
       value="bamb"
     >
       Bambino
     </option>
     <option
       data-testid="beng"
+      onClick={[Function]}
       value="beng"
     >
       Bengal
     </option>
     <option
       data-testid="birm"
+      onClick={[Function]}
       value="birm"
     >
       Birman
     </option>
     <option
       data-testid="bomb"
+      onClick={[Function]}
       value="bomb"
     >
       Bombay
     </option>
     <option
       data-testid="bslo"
+      onClick={[Function]}
       value="bslo"
     >
       British Longhair
     </option>
     <option
       data-testid="bsho"
+      onClick={[Function]}
       value="bsho"
     >
       British Shorthair
     </option>
     <option
       data-testid="bure"
+      onClick={[Function]}
       value="bure"
     >
       Burmese
     </option>
     <option
       data-testid="buri"
+      onClick={[Function]}
       value="buri"
     >
       Burmilla
     </option>
     <option
       data-testid="cspa"
+      onClick={[Function]}
       value="cspa"
     >
       California Spangled
     </option>
     <option
       data-testid="ctif"
+      onClick={[Function]}
       value="ctif"
     >
       Chantilly-Tiffany
     </option>
     <option
       data-testid="char"
+      onClick={[Function]}
       value="char"
     >
       Chartreux
     </option>
     <option
       data-testid="chau"
+      onClick={[Function]}
       value="chau"
     >
       Chausie
     </option>
     <option
       data-testid="chee"
+      onClick={[Function]}
       value="chee"
     >
       Cheetoh
     </option>
     <option
       data-testid="csho"
+      onClick={[Function]}
       value="csho"
     >
       Colorpoint Shorthair
     </option>
     <option
       data-testid="crex"
+      onClick={[Function]}
       value="crex"
     >
       Cornish Rex
     </option>
     <option
       data-testid="cymr"
+      onClick={[Function]}
       value="cymr"
     >
       Cymric
     </option>
     <option
       data-testid="cypr"
+      onClick={[Function]}
       value="cypr"
     >
       Cyprus
     </option>
     <option
       data-testid="drex"
+      onClick={[Function]}
       value="drex"
     >
       Devon Rex
     </option>
     <option
       data-testid="dons"
+      onClick={[Function]}
       value="dons"
     >
       Donskoy
     </option>
     <option
       data-testid="lihu"
+      onClick={[Function]}
       value="lihu"
     >
       Dragon Li
     </option>
     <option
       data-testid="emau"
+      onClick={[Function]}
       value="emau"
     >
       Egyptian Mau
     </option>
     <option
       data-testid="ebur"
+      onClick={[Function]}
       value="ebur"
     >
       European Burmese
     </option>
     <option
       data-testid="esho"
+      onClick={[Function]}
       value="esho"
     >
       Exotic Shorthair
     </option>
     <option
       data-testid="hbro"
+      onClick={[Function]}
       value="hbro"
     >
       Havana Brown
     </option>
     <option
       data-testid="hima"
+      onClick={[Function]}
       value="hima"
     >
       Himalayan
     </option>
     <option
       data-testid="jbob"
+      onClick={[Function]}
       value="jbob"
     >
       Japanese Bobtail
     </option>
     <option
       data-testid="java"
+      onClick={[Function]}
       value="java"
     >
       Javanese
     </option>
     <option
       data-testid="khao"
+      onClick={[Function]}
       value="khao"
     >
       Khao Manee
     </option>
     <option
       data-testid="kora"
+      onClick={[Function]}
       value="kora"
     >
       Korat
     </option>
     <option
       data-testid="kuri"
+      onClick={[Function]}
       value="kuri"
     >
       Kurilian
     </option>
     <option
       data-testid="lape"
+      onClick={[Function]}
       value="lape"
     >
       LaPerm
     </option>
     <option
       data-testid="mcoo"
+      onClick={[Function]}
       value="mcoo"
     >
       Maine Coon
     </option>
     <option
       data-testid="mala"
+      onClick={[Function]}
       value="mala"
     >
       Malayan
     </option>
     <option
       data-testid="manx"
+      onClick={[Function]}
       value="manx"
     >
       Manx
     </option>
     <option
       data-testid="munc"
+      onClick={[Function]}
       value="munc"
     >
       Munchkin
     </option>
     <option
       data-testid="nebe"
+      onClick={[Function]}
       value="nebe"
     >
       Nebelung
     </option>
     <option
       data-testid="norw"
+      onClick={[Function]}
       value="norw"
     >
       Norwegian Forest Cat
     </option>
     <option
       data-testid="ocic"
+      onClick={[Function]}
       value="ocic"
     >
       Ocicat
     </option>
     <option
       data-testid="orie"
+      onClick={[Function]}
       value="orie"
     >
       Oriental
     </option>
     <option
       data-testid="pers"
+      onClick={[Function]}
       value="pers"
     >
       Persian
     </option>
     <option
       data-testid="pixi"
+      onClick={[Function]}
       value="pixi"
     >
       Pixie-bob
     </option>
     <option
       data-testid="raga"
+      onClick={[Function]}
       value="raga"
     >
       Ragamuffin
     </option>
     <option
       data-testid="ragd"
+      onClick={[Function]}
       value="ragd"
     >
       Ragdoll
     </option>
     <option
       data-testid="rblu"
+      onClick={[Function]}
       value="rblu"
     >
       Russian Blue
     </option>
     <option
       data-testid="sava"
+      onClick={[Function]}
       value="sava"
     >
       Savannah
     </option>
     <option
       data-testid="sfol"
+      onClick={[Function]}
       value="sfol"
     >
       Scottish Fold
     </option>
     <option
       data-testid="srex"
+      onClick={[Function]}
       value="srex"
     >
       Selkirk Rex
     </option>
     <option
       data-testid="siam"
+      onClick={[Function]}
       value="siam"
     >
       Siamese
     </option>
     <option
       data-testid="sibe"
+      onClick={[Function]}
       value="sibe"
     >
       Siberian
     </option>
     <option
       data-testid="sing"
+      onClick={[Function]}
       value="sing"
     >
       Singapura
     </option>
     <option
       data-testid="snow"
+      onClick={[Function]}
       value="snow"
     >
       Snowshoe
     </option>
     <option
       data-testid="soma"
+      onClick={[Function]}
       value="soma"
     >
       Somali
     </option>
     <option
       data-testid="sphy"
+      onClick={[Function]}
       value="sphy"
     >
       Sphynx
     </option>
     <option
       data-testid="tonk"
+      onClick={[Function]}
       value="tonk"
     >
       Tonkinese
     </option>
     <option
       data-testid="toyg"
+      onClick={[Function]}
       value="toyg"
     >
       Toyger
     </option>
     <option
       data-testid="tang"
+      onClick={[Function]}
       value="tang"
     >
       Turkish Angora
     </option>
     <option
       data-testid="tvan"
+      onClick={[Function]}
       value="tvan"
     >
       Turkish Van
     </option>
     <option
       data-testid="ycho"
+      onClick={[Function]}
       value="ycho"
     >
       York Chocolate

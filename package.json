@@ -34,7 +34,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "jest --detectOpenHandles",
+    "test": "jest --updateSnapshot",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
