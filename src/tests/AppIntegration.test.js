@@ -19,14 +19,25 @@ describe('App', () => {
         expect(screen.getByText('Siberian'));
       },
     );
-    // fireEvent.click(getByTestId('aege'));
+    fireEvent.click(getByTestId('aege'));
+    setTimeout(function(){
+
+
+    }, 5000); 
     // const tree = fullApp.toJSON();
     // await waitFor(
     //   () => {
     //     expect(screen.getByText('island'));
     //   },
     // );
+    // await waitFor(
+    //   () => {
+    //     expect(asFragment()).toMatchSnapshot();
+    //   },
+    // );
+
     expect(asFragment()).toMatchSnapshot();
+
     // expect(component.getByText(/Searches for JavaScript/)).toBeNull();
     // expect(component.toJSON()).toMatchSnapshot();
   });
