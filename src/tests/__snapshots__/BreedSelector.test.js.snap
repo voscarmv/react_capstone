@@ -9,336 +9,403 @@ exports[`Breed Selector renders correctly 1`] = `
     onChange={[Function]}
   >
     <option
+      data-testid="abys"
       value="abys"
     >
       Abyssinian
     </option>
     <option
+      data-testid="aege"
       value="aege"
     >
       Aegean
     </option>
     <option
+      data-testid="abob"
       value="abob"
     >
       American Bobtail
     </option>
     <option
+      data-testid="acur"
       value="acur"
     >
       American Curl
     </option>
     <option
+      data-testid="asho"
       value="asho"
     >
       American Shorthair
     </option>
     <option
+      data-testid="awir"
       value="awir"
     >
       American Wirehair
     </option>
     <option
+      data-testid="amau"
       value="amau"
     >
       Arabian Mau
     </option>
     <option
+      data-testid="amis"
       value="amis"
     >
       Australian Mist
     </option>
     <option
+      data-testid="bali"
       value="bali"
     >
       Balinese
     </option>
     <option
+      data-testid="bamb"
       value="bamb"
     >
       Bambino
     </option>
     <option
+      data-testid="beng"
       value="beng"
     >
       Bengal
     </option>
     <option
+      data-testid="birm"
       value="birm"
     >
       Birman
     </option>
     <option
+      data-testid="bomb"
       value="bomb"
     >
       Bombay
     </option>
     <option
+      data-testid="bslo"
       value="bslo"
     >
       British Longhair
     </option>
     <option
+      data-testid="bsho"
       value="bsho"
     >
       British Shorthair
     </option>
     <option
+      data-testid="bure"
       value="bure"
     >
       Burmese
     </option>
     <option
+      data-testid="buri"
       value="buri"
     >
       Burmilla
     </option>
     <option
+      data-testid="cspa"
       value="cspa"
     >
       California Spangled
     </option>
     <option
+      data-testid="ctif"
       value="ctif"
     >
       Chantilly-Tiffany
     </option>
     <option
+      data-testid="char"
       value="char"
     >
       Chartreux
     </option>
     <option
+      data-testid="chau"
       value="chau"
     >
       Chausie
     </option>
     <option
+      data-testid="chee"
       value="chee"
     >
       Cheetoh
     </option>
     <option
+      data-testid="csho"
       value="csho"
     >
       Colorpoint Shorthair
     </option>
     <option
+      data-testid="crex"
       value="crex"
     >
       Cornish Rex
     </option>
     <option
+      data-testid="cymr"
       value="cymr"
     >
       Cymric
     </option>
     <option
+      data-testid="cypr"
       value="cypr"
     >
       Cyprus
     </option>
     <option
+      data-testid="drex"
       value="drex"
     >
       Devon Rex
     </option>
     <option
+      data-testid="dons"
       value="dons"
     >
       Donskoy
     </option>
     <option
+      data-testid="lihu"
       value="lihu"
     >
       Dragon Li
     </option>
     <option
+      data-testid="emau"
       value="emau"
     >
       Egyptian Mau
     </option>
     <option
+      data-testid="ebur"
       value="ebur"
     >
       European Burmese
     </option>
     <option
+      data-testid="esho"
       value="esho"
     >
       Exotic Shorthair
     </option>
     <option
+      data-testid="hbro"
       value="hbro"
     >
       Havana Brown
     </option>
     <option
+      data-testid="hima"
       value="hima"
     >
       Himalayan
     </option>
     <option
+      data-testid="jbob"
       value="jbob"
     >
       Japanese Bobtail
     </option>
     <option
+      data-testid="java"
       value="java"
     >
       Javanese
     </option>
     <option
+      data-testid="khao"
       value="khao"
     >
       Khao Manee
     </option>
     <option
+      data-testid="kora"
       value="kora"
     >
       Korat
     </option>
     <option
+      data-testid="kuri"
       value="kuri"
     >
       Kurilian
     </option>
     <option
+      data-testid="lape"
       value="lape"
     >
       LaPerm
     </option>
     <option
+      data-testid="mcoo"
       value="mcoo"
     >
       Maine Coon
     </option>
     <option
+      data-testid="mala"
       value="mala"
     >
       Malayan
     </option>
     <option
+      data-testid="manx"
       value="manx"
     >
       Manx
     </option>
     <option
+      data-testid="munc"
       value="munc"
     >
       Munchkin
     </option>
     <option
+      data-testid="nebe"
       value="nebe"
     >
       Nebelung
     </option>
     <option
+      data-testid="norw"
       value="norw"
     >
       Norwegian Forest Cat
     </option>
     <option
+      data-testid="ocic"
       value="ocic"
     >
       Ocicat
     </option>
     <option
+      data-testid="orie"
       value="orie"
     >
       Oriental
     </option>
     <option
+      data-testid="pers"
       value="pers"
     >
       Persian
     </option>
     <option
+      data-testid="pixi"
       value="pixi"
     >
       Pixie-bob
     </option>
     <option
+      data-testid="raga"
       value="raga"
     >
       Ragamuffin
     </option>
     <option
+      data-testid="ragd"
       value="ragd"
     >
       Ragdoll
     </option>
     <option
+      data-testid="rblu"
       value="rblu"
     >
       Russian Blue
     </option>
     <option
+      data-testid="sava"
       value="sava"
     >
       Savannah
     </option>
     <option
+      data-testid="sfol"
       value="sfol"
     >
       Scottish Fold
     </option>
     <option
+      data-testid="srex"
       value="srex"
     >
       Selkirk Rex
     </option>
     <option
+      data-testid="siam"
       value="siam"
     >
       Siamese
     </option>
     <option
+      data-testid="sibe"
       value="sibe"
     >
       Siberian
     </option>
     <option
+      data-testid="sing"
       value="sing"
     >
       Singapura
     </option>
     <option
+      data-testid="snow"
       value="snow"
     >
       Snowshoe
     </option>
     <option
+      data-testid="soma"
       value="soma"
     >
       Somali
     </option>
     <option
+      data-testid="sphy"
       value="sphy"
     >
       Sphynx
     </option>
     <option
+      data-testid="tonk"
       value="tonk"
     >
       Tonkinese
     </option>
     <option
+      data-testid="toyg"
       value="toyg"
     >
       Toyger
     </option>
     <option
+      data-testid="tang"
       value="tang"
     >
       Turkish Angora
     </option>
     <option
+      data-testid="tvan"
       value="tvan"
     >
       Turkish Van
     </option>
     <option
+      data-testid="ycho"
       value="ycho"
     >
       York Chocolate

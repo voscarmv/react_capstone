@@ -5,10 +5,17 @@ import propTypes from 'prop-types';
 
 const BreedSelector = ({ breedsData, handleSelectChange }) => (
   <Form inline>
-    <FormControl as="select" onChange={handleSelectChange}>
+    <FormControl as="select">
       {breedsData.map(
         breed => (
-          <option value={breed.id} key={breed.id}>{ breed.name }</option>
+          <option
+            onClick={handleSelectChange}
+            value={breed.id}
+            key={breed.id}
+            data-testid={breed.id}
+          >
+            { breed.name }
+          </option>
         ),
       )}
     </FormControl>
