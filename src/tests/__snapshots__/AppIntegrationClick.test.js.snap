@@ -1015,5 +1015,45 @@ exports[`App renders App component 1`] = `
       </form>
     </div>
   </div>
+  <div
+    class="m-3 container"
+  >
+    <div
+      class="row"
+    >
+      <div
+        class="col"
+      >
+        <div>
+          Native to the Greek islands known as the Cyclades in the Aegean Sea, these are natural cats, meaning they developed without humans getting involved in their breeding. As a breed, Aegean Cats are rare, although they are numerous on their home islands. They are generally friendly toward people and can be excellent cats for families with children.
+        </div>
+        <div>
+          <a
+            href="#"
+          >
+            CFA website
+          </a>
+        </div>
+        <div>
+          <a
+            href="https://en.wikipedia.org/wiki/Aegean_cat"
+          >
+            Wikipedia page
+          </a>
+        </div>
+      </div>
+      <div
+        class="col"
+      >
+        <div>
+          <img
+            alt=""
+            class="w-75"
+            src="https://cdn2.thecatapi.com/images/h19-vtIeX.jpg"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
 </DocumentFragment>
 `;

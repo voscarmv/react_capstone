@@ -16,23 +16,12 @@ describe('App', () => {
         expect(screen.getByText('Siberian'));
       },
     );
-    let homeText = screen.getByText('browse');
     fireEvent.click(getByTestId('aege'));
-    await waitForElementToBeRemoved(
+    await waitFor(
       () => {
-        return homeText;
+        expect(screen.getByText('Wikipedia page'));
       },
     );
-    // await waitFor(
-    //   () => {
-    //     expect(screen.getByText('Wikipedia'));
-    //   },
-    // );
-    // await waitFor(
-    //   () => {
-    //     expect(screen.getByText('Wikipedia'));
-    //   },
-    // );
 
     expect(asFragment()).toMatchSnapshot();
   });
