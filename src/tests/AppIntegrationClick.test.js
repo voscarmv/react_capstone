@@ -1,7 +1,7 @@
 import React from 'react';
 // import TestRenderer, { act } from 'react-test-renderer';
 // import { act } from 'react-test-renderer';
-import { render, screen, waitFor, fireEvent } from '@testing-library/react';
+import { render, screen, waitFor, fireEvent, waitForElementToBeRemoved } from '@testing-library/react';
 import { Provider } from 'react-redux';
 import store from '../store/index';
 import App from '../containers/App';
@@ -16,7 +16,23 @@ describe('App', () => {
         expect(screen.getByText('Siberian'));
       },
     );
-    // fireEvent.click(getByTestId('aege'));
+    let homeText = screen.getByText('browse');
+    fireEvent.click(getByTestId('aege'));
+    await waitForElementToBeRemoved(
+      () => {
+        return homeText;
+      },
+    );
+    // await waitFor(
+    //   () => {
+    //     expect(screen.getByText('Wikipedia'));
+    //   },
+    // );
+    // await waitFor(
+    //   () => {
+    //     expect(screen.getByText('Wikipedia'));
+    //   },
+    // );
 
     expect(asFragment()).toMatchSnapshot();
   });
