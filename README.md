@@ -1,6 +1,8 @@
 # Cat-alog
 
-> A search engine for cat breeds online. 
+> A search engine for cat breeds online.
+
+![image](https://user-images.githubusercontent.com/2739245/112683370-1022e580-8e37-11eb-83f7-473b5b1aa884.png)
 
 Check out this [short video presentation.](https://youtu.be/wgLcnCgJZ-Y)
 
@@ -20,7 +22,7 @@ Check out this [short video presentation.](https://youtu.be/wgLcnCgJZ-Y)
 - Visit `http://localhost:3000`
 
 ## Demo
-TBA 
+[Click here](https://cat-alog.netlify.app/) to try out the Cat-alog!
 
 ## Author
 
