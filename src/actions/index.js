@@ -11,10 +11,10 @@ import {
 
 export const updateFilter = payload => ({ type: UPDATE_FILTER, payload });
 export const fetchBreedsRequest = () => ({ type: FETCH_BREEDS_REQUEST });
-export const fetchBreedsSuccess = users => ({ type: FETCH_BREEDS_SUCCESS, payload: users });
+export const fetchBreedsSuccess = breeds => ({ type: FETCH_BREEDS_SUCCESS, payload: breeds });
 export const fetchBreedsError = error => ({ type: FETCH_BREEDS_ERROR, payload: error });
 export const fetchCatRequest = () => ({ type: FETCH_CAT_REQUEST });
-export const fetchCatSuccess = users => ({ type: FETCH_CAT_SUCCESS, payload: users });
+export const fetchCatSuccess = cat => ({ type: FETCH_CAT_SUCCESS, payload: cat });
 export const fetchCatError = error => ({ type: FETCH_CAT_ERROR, payload: error });
 export const fetchBreeds = () => async dispatch => {
   dispatch(fetchBreedsRequest());
