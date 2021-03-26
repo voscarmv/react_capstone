@@ -9,7 +9,7 @@ const NumericFilter = forwardRef(
       handleChange,
     } = props;
     return (
-      <label className="ml-auto" htmlFor={name}>
+      <label className={`ml-auto${!disabled ? ' d-none' : ''}`} htmlFor={name}>
         <span>{name.replace(/^\w/, c => c.toUpperCase()).split('_').join(' ')}</span>
         <input ref={ref} className="mr-3 ml-1" disabled={!disabled} onChange={handleChange} type="number" id={name} defaultValue="1" min="1" max="5" />
       </label>

@@ -136,7 +136,7 @@ const filterForm = () => {
           )
         }
         <hr key="horiz" />
-        <div key="filter-prefs" className="ml-auto mr-3 font-weight-bold">
+        <div key="filter-prefs" className={`ml-auto mr-3 font-weight-bold${Object.values(enabled).every(v => v === false) ? ' d-none' : ''}`}>
           Filter preferences
         </div>
         {

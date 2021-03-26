@@ -16,7 +16,6 @@ describe('App', () => {
         expect(screen.getByText('Siberian'));
       },
     );
-    // fireEvent.click(getByTestId('aege'));
 
     expect(asFragment()).toMatchSnapshot();
   });
