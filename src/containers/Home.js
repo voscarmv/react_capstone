@@ -16,7 +16,7 @@ const Home = () => (
       to display its details here.
       Or if you prefer, filter them first by clicking
       on the Filter button and setting the parameters
-      you sre looking for!
+      you are looking for!
     </p>
   </div>
 );

@@ -26,25 +26,21 @@ export const fetchBreeds = () => async dispatch => {
     dispatch(fetchBreedsError(e));
   }
 };
-export const fetchCat = breed => dispatch => {
+export const fetchCat = breed => async dispatch => {
   dispatch(fetchCatRequest());
   const xAPIKey = 'x-api-key';
-  (
-    async () => {
-      try {
-        const getCat = await fetch(
-          `https://api.thecatapi.com/v1/images/search?breed_id=${breed}`,
-          {
-            headers: {
-              [xAPIKey]: '20874f76-4233-4e78-9f44-e30c018c07e8',
-            },
-          },
-        );
-        const catJSON = await getCat.json();
-        dispatch(fetchCatSuccess(catJSON));
-      } catch (e) {
-        dispatch(fetchCatError(e));
-      }
-    }
-  )();
+  try {
+    const getCat = await fetch(
+      `https://api.thecatapi.com/v1/images/search?breed_id=${breed}`,
+      {
+        headers: {
+          [xAPIKey]: '20874f76-4233-4e78-9f44-e30c018c07e8',
+        },
+      },
+    );
+    const catJSON = await getCat.json();
+    dispatch(fetchCatSuccess(catJSON));
+  } catch (e) {
+    dispatch(fetchCatError(e));
+  }
 };
