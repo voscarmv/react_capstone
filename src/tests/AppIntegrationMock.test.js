@@ -3,26 +3,30 @@ import {
   render, screen, waitFor,
 } from '@testing-library/react';
 import { Provider } from 'react-redux';
-import configureMockStore from 'redux-mock-store';
-import thunk from 'redux-thunk';
 import store from '../store/index';
 import App from '../containers/App';
 import 'regenerator-runtime/runtime';
 import * as actions from '../actions/index';
 import breeds from './BreedsResponse';
-import combineReducers from '../reducers/index';
-
-const mockStore = configureMockStore([combineReducers, thunk]);
+import FETCH_BREEDS_SUCCESS from '../actions/action-types';
 
 jest.mock('../actions/index');
-jest.mock('../store/index');
 
 describe('App', () => {
   beforeEach(() => {
     actions.fetchBreeds.mockImplementation(
-      async () => dispatch => dispatch(actions.fetchBreedsSuccess(breeds)),
+      () => ({ type: 'FETCH_BREEDS_SUCCESS', payload: breeds })
+      // // const dispatch = useDispatch();
+      // dispatch(actions.fetchBreedsRequest());
+      // try {
+      //   // const getBreeds = await fetch('https://api.thecatapi.com/v1/breeds');
+      //   // const breedsJSON = await getBreeds.json();
+      //   dispatch(actions.fetchBreedsSuccess(breeds));
+      // } catch (e) {
+      //   dispatch(actions.fetchBreedsError(e));
+      // }
+      ,
     );
-    store.store = mockStore;
   });
   afterEach(() => {
     actions.fetchBreeds.mockRestore();
