@@ -8,7 +8,6 @@ import App from '../containers/App';
 import 'regenerator-runtime/runtime';
 import * as actions from '../actions/index';
 import breeds from './BreedsResponse';
-import FETCH_BREEDS_SUCCESS from '../actions/action-types';
 
 jest.mock('../actions/index');
 
