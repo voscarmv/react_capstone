@@ -1,0 +1,1097 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App renders Cat component 1`] = `
+<DocumentFragment>
+  <nav
+    class="navbar navbar-expand navbar-dark bg-dark"
+  >
+    <span
+      class="navbar-brand"
+    >
+      <span
+        aria-label="cat"
+        role="img"
+      >
+        😺
+      </span>
+      <a
+        href="/"
+      >
+        The Cat-alog
+      </a>
+    </span>
+    <div
+      class="container-fluid"
+    >
+      <div
+        class="ml-auto text-light"
+      >
+        Show breed:
+      </div>
+      <div
+        class="p-3"
+      >
+        <form
+          class="form-inline"
+        >
+          <select
+            class="form-control"
+          >
+            <option
+              data-testid="abys"
+              value="abys"
+            >
+              Abyssinian
+            </option>
+            <option
+              data-testid="aege"
+              value="aege"
+            >
+              Aegean
+            </option>
+            <option
+              data-testid="abob"
+              value="abob"
+            >
+              American Bobtail
+            </option>
+            <option
+              data-testid="acur"
+              value="acur"
+            >
+              American Curl
+            </option>
+            <option
+              data-testid="asho"
+              value="asho"
+            >
+              American Shorthair
+            </option>
+            <option
+              data-testid="awir"
+              value="awir"
+            >
+              American Wirehair
+            </option>
+            <option
+              data-testid="amau"
+              value="amau"
+            >
+              Arabian Mau
+            </option>
+            <option
+              data-testid="amis"
+              value="amis"
+            >
+              Australian Mist
+            </option>
+            <option
+              data-testid="bali"
+              value="bali"
+            >
+              Balinese
+            </option>
+            <option
+              data-testid="bamb"
+              value="bamb"
+            >
+              Bambino
+            </option>
+            <option
+              data-testid="beng"
+              value="beng"
+            >
+              Bengal
+            </option>
+            <option
+              data-testid="birm"
+              value="birm"
+            >
+              Birman
+            </option>
+            <option
+              data-testid="bomb"
+              value="bomb"
+            >
+              Bombay
+            </option>
+            <option
+              data-testid="bslo"
+              value="bslo"
+            >
+              British Longhair
+            </option>
+            <option
+              data-testid="bsho"
+              value="bsho"
+            >
+              British Shorthair
+            </option>
+            <option
+              data-testid="bure"
+              value="bure"
+            >
+              Burmese
+            </option>
+            <option
+              data-testid="buri"
+              value="buri"
+            >
+              Burmilla
+            </option>
+            <option
+              data-testid="cspa"
+              value="cspa"
+            >
+              California Spangled
+            </option>
+            <option
+              data-testid="ctif"
+              value="ctif"
+            >
+              Chantilly-Tiffany
+            </option>
+            <option
+              data-testid="char"
+              value="char"
+            >
+              Chartreux
+            </option>
+            <option
+              data-testid="chau"
+              value="chau"
+            >
+              Chausie
+            </option>
+            <option
+              data-testid="chee"
+              value="chee"
+            >
+              Cheetoh
+            </option>
+            <option
+              data-testid="csho"
+              value="csho"
+            >
+              Colorpoint Shorthair
+            </option>
+            <option
+              data-testid="crex"
+              value="crex"
+            >
+              Cornish Rex
+            </option>
+            <option
+              data-testid="cymr"
+              value="cymr"
+            >
+              Cymric
+            </option>
+            <option
+              data-testid="cypr"
+              value="cypr"
+            >
+              Cyprus
+            </option>
+            <option
+              data-testid="drex"
+              value="drex"
+            >
+              Devon Rex
+            </option>
+            <option
+              data-testid="dons"
+              value="dons"
+            >
+              Donskoy
+            </option>
+            <option
+              data-testid="lihu"
+              value="lihu"
+            >
+              Dragon Li
+            </option>
+            <option
+              data-testid="emau"
+              value="emau"
+            >
+              Egyptian Mau
+            </option>
+            <option
+              data-testid="ebur"
+              value="ebur"
+            >
+              European Burmese
+            </option>
+            <option
+              data-testid="esho"
+              value="esho"
+            >
+              Exotic Shorthair
+            </option>
+            <option
+              data-testid="hbro"
+              value="hbro"
+            >
+              Havana Brown
+            </option>
+            <option
+              data-testid="hima"
+              value="hima"
+            >
+              Himalayan
+            </option>
+            <option
+              data-testid="jbob"
+              value="jbob"
+            >
+              Japanese Bobtail
+            </option>
+            <option
+              data-testid="java"
+              value="java"
+            >
+              Javanese
+            </option>
+            <option
+              data-testid="khao"
+              value="khao"
+            >
+              Khao Manee
+            </option>
+            <option
+              data-testid="kora"
+              value="kora"
+            >
+              Korat
+            </option>
+            <option
+              data-testid="kuri"
+              value="kuri"
+            >
+              Kurilian
+            </option>
+            <option
+              data-testid="lape"
+              value="lape"
+            >
+              LaPerm
+            </option>
+            <option
+              data-testid="mcoo"
+              value="mcoo"
+            >
+              Maine Coon
+            </option>
+            <option
+              data-testid="mala"
+              value="mala"
+            >
+              Malayan
+            </option>
+            <option
+              data-testid="manx"
+              value="manx"
+            >
+              Manx
+            </option>
+            <option
+              data-testid="munc"
+              value="munc"
+            >
+              Munchkin
+            </option>
+            <option
+              data-testid="nebe"
+              value="nebe"
+            >
+              Nebelung
+            </option>
+            <option
+              data-testid="norw"
+              value="norw"
+            >
+              Norwegian Forest Cat
+            </option>
+            <option
+              data-testid="ocic"
+              value="ocic"
+            >
+              Ocicat
+            </option>
+            <option
+              data-testid="orie"
+              value="orie"
+            >
+              Oriental
+            </option>
+            <option
+              data-testid="pers"
+              value="pers"
+            >
+              Persian
+            </option>
+            <option
+              data-testid="pixi"
+              value="pixi"
+            >
+              Pixie-bob
+            </option>
+            <option
+              data-testid="raga"
+              value="raga"
+            >
+              Ragamuffin
+            </option>
+            <option
+              data-testid="ragd"
+              value="ragd"
+            >
+              Ragdoll
+            </option>
+            <option
+              data-testid="rblu"
+              value="rblu"
+            >
+              Russian Blue
+            </option>
+            <option
+              data-testid="sava"
+              value="sava"
+            >
+              Savannah
+            </option>
+            <option
+              data-testid="sfol"
+              value="sfol"
+            >
+              Scottish Fold
+            </option>
+            <option
+              data-testid="srex"
+              value="srex"
+            >
+              Selkirk Rex
+            </option>
+            <option
+              data-testid="siam"
+              value="siam"
+            >
+              Siamese
+            </option>
+            <option
+              data-testid="sibe"
+              value="sibe"
+            >
+              Siberian
+            </option>
+            <option
+              data-testid="sing"
+              value="sing"
+            >
+              Singapura
+            </option>
+            <option
+              data-testid="snow"
+              value="snow"
+            >
+              Snowshoe
+            </option>
+            <option
+              data-testid="soma"
+              value="soma"
+            >
+              Somali
+            </option>
+            <option
+              data-testid="sphy"
+              value="sphy"
+            >
+              Sphynx
+            </option>
+            <option
+              data-testid="tonk"
+              value="tonk"
+            >
+              Tonkinese
+            </option>
+            <option
+              data-testid="toyg"
+              value="toyg"
+            >
+              Toyger
+            </option>
+            <option
+              data-testid="tang"
+              value="tang"
+            >
+              Turkish Angora
+            </option>
+            <option
+              data-testid="tvan"
+              value="tvan"
+            >
+              Turkish Van
+            </option>
+            <option
+              data-testid="ycho"
+              value="ycho"
+            >
+              York Chocolate
+            </option>
+          </select>
+        </form>
+      </div>
+      <div
+        class=""
+      >
+        <button
+          aria-controls="collapse-filter-form"
+          aria-expanded="false"
+          class="btn btn-primary"
+          type="button"
+        >
+          Filter
+        </button>
+      </div>
+    </div>
+  </nav>
+  <div
+    class="collapse"
+    id="collapse-filter-form"
+  >
+    <div
+      class="bg-dark text-light p-3"
+    >
+      <form>
+        <div
+          class="ml-auto mr-3 font-weight-bold"
+        >
+          Filter by
+        </div>
+        <label
+          class="ml-auto"
+          for="experimental"
+        >
+          Experimental
+          <input
+            class="mr-3 ml-1"
+            data-testid="experimental_enable"
+            id="experimental"
+            type="checkbox"
+            value="experimental"
+          />
+        </label>
+        <label
+          class="ml-auto"
+          for="hairless"
+        >
+          Hairless
+          <input
+            class="mr-3 ml-1"
+            data-testid="hairless_enable"
+            id="hairless"
+            type="checkbox"
+            value="hairless"
+          />
+        </label>
+        <label
+          class="ml-auto"
+          for="natural"
+        >
+          Natural
+          <input
+            class="mr-3 ml-1"
+            data-testid="natural_enable"
+            id="natural"
+            type="checkbox"
+            value="natural"
+          />
+        </label>
+        <label
+          class="ml-auto"
+          for="rare"
+        >
+          Rare
+          <input
+            class="mr-3 ml-1"
+            data-testid="rare_enable"
+            id="rare"
+            type="checkbox"
+            value="rare"
+          />
+        </label>
+        <label
+          class="ml-auto"
+          for="suppressed_tail"
+        >
+          Suppressed tail
+          <input
+            class="mr-3 ml-1"
+            data-testid="suppressed_tail_enable"
+            id="suppressed_tail"
+            type="checkbox"
+            value="suppressed_tail"
+          />
+        </label>
+        <label
+          class="ml-auto"
+          for="short_legs"
+        >
+          Short legs
+          <input
+            class="mr-3 ml-1"
+            data-testid="short_legs_enable"
+            id="short_legs"
+            type="checkbox"
+            value="short_legs"
+          />
+        </label>
+        <label
+          class="ml-auto"
+          for="hypoallergenic"
+        >
+          Hypoallergenic
+          <input
+            class="mr-3 ml-1"
+            data-testid="hypoallergenic_enable"
+            id="hypoallergenic"
+            type="checkbox"
+            value="hypoallergenic"
+          />
+        </label>
+        <label
+          class="ml-auto"
+          for="adaptability"
+        >
+          Adaptability
+          <input
+            class="mr-3 ml-1"
+            data-testid="adaptability_enable"
+            id="adaptability"
+            type="checkbox"
+            value="adaptability"
+          />
+        </label>
+        <label
+          class="ml-auto"
+          for="affection_level"
+        >
+          Affection level
+          <input
+            class="mr-3 ml-1"
+            data-testid="affection_level_enable"
+            id="affection_level"
+            type="checkbox"
+            value="affection_level"
+          />
+        </label>
+        <label
+          class="ml-auto"
+          for="child_friendly"
+        >
+          Child friendly
+          <input
+            class="mr-3 ml-1"
+            data-testid="child_friendly_enable"
+            id="child_friendly"
+            type="checkbox"
+            value="child_friendly"
+          />
+        </label>
+        <label
+          class="ml-auto"
+          for="dog_friendly"
+        >
+          Dog friendly
+          <input
+            class="mr-3 ml-1"
+            data-testid="dog_friendly_enable"
+            id="dog_friendly"
+            type="checkbox"
+            value="dog_friendly"
+          />
+        </label>
+        <label
+          class="ml-auto"
+          for="energy_level"
+        >
+          Energy level
+          <input
+            class="mr-3 ml-1"
+            data-testid="energy_level_enable"
+            id="energy_level"
+            type="checkbox"
+            value="energy_level"
+          />
+        </label>
+        <label
+          class="ml-auto"
+          for="grooming"
+        >
+          Grooming
+          <input
+            class="mr-3 ml-1"
+            data-testid="grooming_enable"
+            id="grooming"
+            type="checkbox"
+            value="grooming"
+          />
+        </label>
+        <label
+          class="ml-auto"
+          for="health_issues"
+        >
+          Health issues
+          <input
+            class="mr-3 ml-1"
+            data-testid="health_issues_enable"
+            id="health_issues"
+            type="checkbox"
+            value="health_issues"
+          />
+        </label>
+        <label
+          class="ml-auto"
+          for="intelligence"
+        >
+          Intelligence
+          <input
+            class="mr-3 ml-1"
+            data-testid="intelligence_enable"
+            id="intelligence"
+            type="checkbox"
+            value="intelligence"
+          />
+        </label>
+        <label
+          class="ml-auto"
+          for="shedding_level"
+        >
+          Shedding level
+          <input
+            class="mr-3 ml-1"
+            data-testid="shedding_level_enable"
+            id="shedding_level"
+            type="checkbox"
+            value="shedding_level"
+          />
+        </label>
+        <label
+          class="ml-auto"
+          for="social_needs"
+        >
+          Social needs
+          <input
+            class="mr-3 ml-1"
+            data-testid="social_needs_enable"
+            id="social_needs"
+            type="checkbox"
+            value="social_needs"
+          />
+        </label>
+        <label
+          class="ml-auto"
+          for="stranger_friendly"
+        >
+          Stranger friendly
+          <input
+            class="mr-3 ml-1"
+            data-testid="stranger_friendly_enable"
+            id="stranger_friendly"
+            type="checkbox"
+            value="stranger_friendly"
+          />
+        </label>
+        <label
+          class="ml-auto"
+          for="vocalisation"
+        >
+          Vocalisation
+          <input
+            class="mr-3 ml-1"
+            data-testid="vocalisation_enable"
+            id="vocalisation"
+            type="checkbox"
+            value="vocalisation"
+          />
+        </label>
+        <hr />
+        <div
+          class="ml-auto mr-3 font-weight-bold d-none"
+        >
+          Filter preferences
+        </div>
+        <label
+          class="ml-auto d-none"
+          data-testid="experimental"
+          for="experimental"
+        >
+          <span>
+            Experimental
+          </span>
+          <input
+            class="mr-3 ml-1"
+            disabled=""
+            id="experimental"
+            type="checkbox"
+            value="experimental"
+          />
+        </label>
+        <label
+          class="ml-auto d-none"
+          data-testid="hairless"
+          for="hairless"
+        >
+          <span>
+            Hairless
+          </span>
+          <input
+            class="mr-3 ml-1"
+            disabled=""
+            id="hairless"
+            type="checkbox"
+            value="hairless"
+          />
+        </label>
+        <label
+          class="ml-auto d-none"
+          data-testid="natural"
+          for="natural"
+        >
+          <span>
+            Natural
+          </span>
+          <input
+            class="mr-3 ml-1"
+            disabled=""
+            id="natural"
+            type="checkbox"
+            value="natural"
+          />
+        </label>
+        <label
+          class="ml-auto d-none"
+          data-testid="rare"
+          for="rare"
+        >
+          <span>
+            Rare
+          </span>
+          <input
+            class="mr-3 ml-1"
+            disabled=""
+            id="rare"
+            type="checkbox"
+            value="rare"
+          />
+        </label>
+        <label
+          class="ml-auto d-none"
+          data-testid="suppressed_tail"
+          for="suppressed_tail"
+        >
+          <span>
+            Suppressed tail
+          </span>
+          <input
+            class="mr-3 ml-1"
+            disabled=""
+            id="suppressed_tail"
+            type="checkbox"
+            value="suppressed_tail"
+          />
+        </label>
+        <label
+          class="ml-auto d-none"
+          data-testid="short_legs"
+          for="short_legs"
+        >
+          <span>
+            Short legs
+          </span>
+          <input
+            class="mr-3 ml-1"
+            disabled=""
+            id="short_legs"
+            type="checkbox"
+            value="short_legs"
+          />
+        </label>
+        <label
+          class="ml-auto d-none"
+          data-testid="hypoallergenic"
+          for="hypoallergenic"
+        >
+          <span>
+            Hypoallergenic
+          </span>
+          <input
+            class="mr-3 ml-1"
+            disabled=""
+            id="hypoallergenic"
+            type="checkbox"
+            value="hypoallergenic"
+          />
+        </label>
+        <label
+          class="ml-auto d-none"
+          data-testid="adaptability"
+          for="adaptability"
+        >
+          <span>
+            Adaptability
+          </span>
+          <input
+            class="mr-3 ml-1"
+            disabled=""
+            id="adaptability"
+            max="5"
+            min="1"
+            type="number"
+            value="1"
+          />
+        </label>
+        <label
+          class="ml-auto d-none"
+          data-testid="affection_level"
+          for="affection_level"
+        >
+          <span>
+            Affection level
+          </span>
+          <input
+            class="mr-3 ml-1"
+            disabled=""
+            id="affection_level"
+            max="5"
+            min="1"
+            type="number"
+            value="1"
+          />
+        </label>
+        <label
+          class="ml-auto d-none"
+          data-testid="child_friendly"
+          for="child_friendly"
+        >
+          <span>
+            Child friendly
+          </span>
+          <input
+            class="mr-3 ml-1"
+            disabled=""
+            id="child_friendly"
+            max="5"
+            min="1"
+            type="number"
+            value="1"
+          />
+        </label>
+        <label
+          class="ml-auto d-none"
+          data-testid="dog_friendly"
+          for="dog_friendly"
+        >
+          <span>
+            Dog friendly
+          </span>
+          <input
+            class="mr-3 ml-1"
+            disabled=""
+            id="dog_friendly"
+            max="5"
+            min="1"
+            type="number"
+            value="1"
+          />
+        </label>
+        <label
+          class="ml-auto d-none"
+          data-testid="energy_level"
+          for="energy_level"
+        >
+          <span>
+            Energy level
+          </span>
+          <input
+            class="mr-3 ml-1"
+            disabled=""
+            id="energy_level"
+            max="5"
+            min="1"
+            type="number"
+            value="1"
+          />
+        </label>
+        <label
+          class="ml-auto d-none"
+          data-testid="grooming"
+          for="grooming"
+        >
+          <span>
+            Grooming
+          </span>
+          <input
+            class="mr-3 ml-1"
+            disabled=""
+            id="grooming"
+            max="5"
+            min="1"
+            type="number"
+            value="1"
+          />
+        </label>
+        <label
+          class="ml-auto d-none"
+          data-testid="health_issues"
+          for="health_issues"
+        >
+          <span>
+            Health issues
+          </span>
+          <input
+            class="mr-3 ml-1"
+            disabled=""
+            id="health_issues"
+            max="5"
+            min="1"
+            type="number"
+            value="1"
+          />
+        </label>
+        <label
+          class="ml-auto d-none"
+          data-testid="intelligence"
+          for="intelligence"
+        >
+          <span>
+            Intelligence
+          </span>
+          <input
+            class="mr-3 ml-1"
+            disabled=""
+            id="intelligence"
+            max="5"
+            min="1"
+            type="number"
+            value="1"
+          />
+        </label>
+        <label
+          class="ml-auto d-none"
+          data-testid="shedding_level"
+          for="shedding_level"
+        >
+          <span>
+            Shedding level
+          </span>
+          <input
+            class="mr-3 ml-1"
+            disabled=""
+            id="shedding_level"
+            max="5"
+            min="1"
+            type="number"
+            value="1"
+          />
+        </label>
+        <label
+          class="ml-auto d-none"
+          data-testid="social_needs"
+          for="social_needs"
+        >
+          <span>
+            Social needs
+          </span>
+          <input
+            class="mr-3 ml-1"
+            disabled=""
+            id="social_needs"
+            max="5"
+            min="1"
+            type="number"
+            value="1"
+          />
+        </label>
+        <label
+          class="ml-auto d-none"
+          data-testid="stranger_friendly"
+          for="stranger_friendly"
+        >
+          <span>
+            Stranger friendly
+          </span>
+          <input
+            class="mr-3 ml-1"
+            disabled=""
+            id="stranger_friendly"
+            max="5"
+            min="1"
+            type="number"
+            value="1"
+          />
+        </label>
+        <label
+          class="ml-auto d-none"
+          data-testid="vocalisation"
+          for="vocalisation"
+        >
+          <span>
+            Vocalisation
+          </span>
+          <input
+            class="mr-3 ml-1"
+            disabled=""
+            id="vocalisation"
+            max="5"
+            min="1"
+            type="number"
+            value="1"
+          />
+        </label>
+      </form>
+    </div>
+  </div>
+  <div
+    class="m-3 container"
+  >
+    <div
+      class="row"
+    >
+      <div
+        class="col"
+      >
+        <div>
+          Native to the Greek islands known as the Cyclades in the Aegean Sea, these are natural cats, meaning they developed without humans getting involved in their breeding. As a breed, Aegean Cats are rare, although they are numerous on their home islands. They are generally friendly toward people and can be excellent cats for families with children.
+        </div>
+        <div>
+          <a
+            href="#"
+          >
+            CFA website
+          </a>
+        </div>
+        <div>
+          <a
+            href="https://en.wikipedia.org/wiki/Aegean_cat"
+          >
+            Wikipedia page
+          </a>
+        </div>
+      </div>
+      <div
+        class="col"
+      >
+        <div>
+          <img
+            alt=""
+            class="w-75"
+            src="https://cdn2.thecatapi.com/images/ozEvzdVM-.jpg"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
