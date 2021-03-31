@@ -1,25 +1,31 @@
-/* eslint-disable no-console */
 import React from 'react';
-import { Form, FormControl } from 'react-bootstrap';
 import propTypes from 'prop-types';
+import { Dropdown, Button } from 'react-bootstrap';
 
 const BreedSelector = ({ breedsData, handleSelectChange }) => (
-  <Form inline>
-    <FormControl as="select">
+  <Dropdown>
+    <Dropdown.Toggle data-testid="breed_selector" variant="success" id="dropdown-basic">
+      Choose
+    </Dropdown.Toggle>
+    <Dropdown.Menu>
       {breedsData.map(
         breed => (
-          <option
-            onClick={handleSelectChange}
-            value={breed.id}
-            key={breed.id}
-            data-testid={breed.id}
-          >
-            { breed.name }
-          </option>
+          <Dropdown.Item key={breed.id}>
+            <Button
+              data-testid={breed.id}
+              type="button"
+              classList="dropdown-item"
+              key={breed.id}
+              onClick={handleSelectChange}
+              value={breed.id}
+            >
+              { breed.name }
+            </Button>
+          </Dropdown.Item>
         ),
       )}
-    </FormControl>
-  </Form>
+    </Dropdown.Menu>
+  </Dropdown>
 );
 
 BreedSelector.propTypes = {

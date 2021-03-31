@@ -16,6 +16,7 @@ describe('App', () => {
   test('renders Cat component', async () => {
     const fullApp = render(<Provider store={store}><App /></Provider>);
     const { getByTestId, asFragment } = fullApp;
+    fireEvent.click(getByTestId('breed_selector'));
     await waitFor(
       () => {
         expect(screen.getByText('Siberian'));

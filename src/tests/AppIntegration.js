@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  render, screen, waitFor,
+  render, screen, waitFor, fireEvent,
 } from '@testing-library/react';
 import { Provider } from 'react-redux';
 import store from '../store/index';
@@ -15,7 +15,8 @@ import 'regenerator-runtime/runtime';
 describe('App', () => {
   test('renders App component', async () => {
     const fullApp = render(<Provider store={store}><App /></Provider>);
-    const { asFragment } = fullApp;
+    const { getByTestId, asFragment } = fullApp;
+    fireEvent.click(getByTestId('breed_selector'));
     await waitFor(
       () => {
         expect(screen.getByText('Siberian'));

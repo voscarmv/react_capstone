@@ -31,13 +31,25 @@ exports[`App renders filter component 1`] = `
       <div
         class="p-3"
       >
-        <form
-          class="form-inline"
+        <div
+          class="dropdown"
         >
-          <select
-            class="form-control"
+          <button
+            aria-expanded="false"
+            aria-haspopup="true"
+            class="dropdown-toggle btn btn-success"
+            data-testid="breed_selector"
+            id="dropdown-basic"
+            type="button"
+          >
+            Choose
+          </button>
+          <div
+            aria-labelledby="dropdown-basic"
+            class="dropdown-menu"
+            style="margin: 0px;"
           />
-        </form>
+        </div>
       </div>
       <div
         class=""
